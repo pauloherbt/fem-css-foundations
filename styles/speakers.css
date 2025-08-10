@@ -1,0 +1,65 @@
+@import "./base.css";
+
+main {
+  padding: 2rem 9rem;
+}
+p {
+  color: var(--primary-text-color);
+}
+.shopping-cart {
+  fill: var(--primary-color);
+}
+.speakers__body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+.speakers__title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.speakers__container {
+  display: grid;
+  column-gap: 8rem;
+  row-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.speakers__container img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.speaker__item h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+.speaker__item p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (width < 900px) {
+  .speakers__title {
+    font-size: 2.5rem;
+  }
+  .speakers__container {
+    grid-template-columns: 1fr;
+  }
+  .speakers__container {
+    max-width: 500px;
+  }
+  .nav-list {
+    background-color: var(--secondary-color);
+  }
+}
+@media (width < 500px) {
+  main {
+    padding: 2rem 1rem;
+  }
+}
